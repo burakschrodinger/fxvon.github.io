@@ -3,6 +3,37 @@
       padding: 0;
       box-sizing: border-box;
 }
+body{
+   
+}
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+:root {
+  --bg-page: #1a1a1a;
+  --text-color: #f3f3f3;
+  --card-bg: #202020;
+  --icon-bg: #45423C;
+  --blue: #0870f8;
+  --blue-rgb: 8, 112, 248;
+  --orange: #FF9232;
+  --g-purple: linear-gradient(30deg, #85f, #9966ff);
+  --g-yellow: linear-gradient(30deg, #fc0, #fc0);
+  --g-red: linear-gradient(30deg, #f36, #f24);
+  --g-blue: linear-gradient(30deg, #0cf, #0af);
+  --g-purple: linear-gradient(30deg, #85f, #9966ff);
+  --range: 0%;
+  --shadow: rgba(0, 6, 39, .1);
+  --light-shadow: rgba(255, 255, 255, .8);
+  --light-shadow-2: rgba(255, 255, 255, .1);
+}
  
 nav{
       
@@ -100,6 +131,7 @@ nav{
         color: cyan;
       }
     }
+    
 
 
 
@@ -186,14 +218,28 @@ nav{
       display: grid;
       grid-template-columns: repeat(auto-fit,minmax(351px,1fr));
       gap: 16px;
+      grid-row-gap: 40px;
 }
-.sec-cont img{
-      margin-bottom: 20px;
+.secimg{
+  width: 310px;
+  height: 260px;
+  background: url(208x200.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  
 }
+ 
 .sec-cont p{
       margin-top: 10px;
       padding-right: 30px;
-       
+      text-indent: 10px;
+}
+.seccont{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  width: 310px;
+  height: 250px;
+  padding: 10px;
 }
  
 
@@ -226,4 +272,112 @@ footer{
   .section-1{
     width: 95%;
   }
+}
+.badge{
+  margin-top: 19px;
+}
+
+/* .cat-sec{
+  width: 100%;
+  height: 70vh;
+  margin-top: 100px;
+  background: url(jesusdinner.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+
+  
+  
+  
+}
+ 
+.tarih-sec{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.tarih-sec-cont{
+  width: 300px;
+  height: 300px;
+   
+  background-color: red;
+}
+
+
+@media (max-width:1000px){
+  .tarih-sec-cont-1{
+    display: none;
+  }
+}
+@media (max-width:756px){
+  .tarih-sec-cont-2{
+    display: none;
+  }
+}
+@media (max-width:520px){
+  .tarih-sec-cont-3{
+    display: none;
+  }
+} */
+
+ 
+.hide {
+  display: none;
+  visibility: hidden;
+  height: 0;
+}
+
+.pgn {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+  justify-content: center;
+   
+}
+@media (max-width:352px){
+  .pgn .txtt{
+      display: none;
+  }
+}
+
+.arrow\:text {
+  display: block;
+  vertical-align: middle;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.pagination\:number {
+  --size: 32px;
+  --margin: 6px;
+  margin: 0 var(--margin);
+  border-radius: 6px;
+  background: #202020;
+  max-width: auto;
+  min-width: var(--size);
+  height: var(--size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0 6px;
+  background: var(--bg-page);
+  color: var(--text-color);
+}
+@media (hover: hover) {
+  .pagination\:number:hover {
+    background: #282828;
+  }
+}
+.pagination\:number:active {
+  background: #282828;
+}
+
+.pagination\:active {
+  background: #282828;
+  position: relative;
 }
