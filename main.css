@@ -19,14 +19,10 @@ html {
   --text-color: #f3f3f3;
   --card-bg: #202020;
   --icon-bg: #45423C;
-  --blue: #0870f8;
+  
   --blue-rgb: 8, 112, 248;
-  --orange: #FF9232;
-  --g-purple: linear-gradient(30deg, #85f, #9966ff);
-  --g-yellow: linear-gradient(30deg, #fc0, #fc0);
-  --g-red: linear-gradient(30deg, #f36, #f24);
-  --g-blue: linear-gradient(30deg, #0cf, #0af);
-  --g-purple: linear-gradient(30deg, #85f, #9966ff);
+  
+  
   --range: 0%;
   --shadow: rgba(0, 6, 39, .1);
   --light-shadow: rgba(255, 255, 255, .8);
@@ -151,12 +147,6 @@ nav{
 
 
 
-
-
-
-
-
-
 .headerr{
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -174,9 +164,6 @@ nav{
       }
 }
 
-
- 
- 
  
 @media (max-width:990px){
        
@@ -186,7 +173,6 @@ nav{
   }
   
 }
- 
  
 @media (max-width:777px){
        
@@ -213,6 +199,14 @@ nav{
    display: flex;
     
 }
+.resim{
+  width: 150px;
+  height: 100px;
+  background: url(img/1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .contentt{
   margin-left: 23px;
 }
@@ -222,19 +216,24 @@ nav{
     width: 100%;
   }
 }
-
-
+ 
 
 
 .section-1{
      
-      width: 80%;
+      width: 85%;
       margin: auto;
       margin-top: 110px;
       display: grid;
       grid-template-columns: repeat(auto-fit,minmax(301px,1fr));
       gap: 16px;
-      grid-row-gap: 40px;
+      grid-row-gap: 70px;
+}
+
+.sec-cont{
+  width: 320px;
+   
+  
 }
 .secimg{
   width: 310px;
@@ -243,7 +242,93 @@ nav{
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   
+}
+ 
+@media (max-width:727px){
+  .sec-cont{
+     margin-left: 200px;
+  }
+}
+@media (max-width:720px){
+  .sec-cont{
+     margin-left: 190px;
+  }
+}
+@media (max-width:700px){
+  .sec-cont{
+     margin-left: 180px;
+  }
+}
+@media (max-width:680px){
+  .sec-cont{
+     margin-left: 170px;
+  }
+  @media (max-width:670px){
+    .sec-cont{
+       margin-left: 160px;
+    }
+    @media (max-width:660px){
+      .sec-cont{
+         margin-left: 160px;
+      }
+      @media (max-width:650px){
+        .sec-cont{
+           margin-left: 150px;
+        }
+        @media (max-width:630px){
+          .sec-cont{
+             margin-left: 130px;
+          }
+          @media (max-width:610px){
+            .sec-cont{
+               margin-left: 110px;
+            }
+            @media (max-width:590px){
+              .sec-cont{
+                 margin-left: 90px;
+              }
+              @media (max-width:570px){
+                .sec-cont{
+                   margin-left: 70px;
+                }
+                @media (max-width:550px){
+                  .sec-cont{
+                     margin-left: 50px;
+                  }
+                  @media (max-width:450px){
+                    .sec-cont{
+                       margin-left: 30px;
+                    }
+                    @media (max-width:390px){
+                      .sec-cont{
+                         margin-left: 20px;
+                      }
+                      @media (max-width:357px){
+                        .sec-cont{
+                           margin-left:10px;
+                        }
+                        @media (max-width:319px){
+                           
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.seccont{
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+   
 }
  
 .sec-cont p{
@@ -254,7 +339,7 @@ nav{
 .seccont{
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   width: 310px;
-  height: 250px;
+  min-height: 150px;
   padding: 10px;
 }
 
@@ -280,13 +365,38 @@ nav{
       height: 260px;
   
 }
+ 
 
 .seccont{
    
   width: 300px;
   height: 250px;
 }}
- 
+
+.content-main{
+  width: 85%;
+  margin: auto;
+  margin-top: 130px;
+  background-color: bisque;
+  
+
+  /* grid-template-columns: 1fr 1fr; */
+}
+.contsec{
+  display: flex;
+}
+.seccont-1{
+  margin-left: 50px;
+}
+.imgsec{
+  width: 300px;
+  height: 250px;
+  background: url(3.jpg) no-repeat;
+  background-color: black;
+  background-size: cover;
+}
+
+
 footer{
       margin-top: 50px;
       background-color: black;
