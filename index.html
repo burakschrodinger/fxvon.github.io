@@ -4,46 +4,53 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width-device-width, initial-scale-1.0"> 
 	<title>Document</title>
-	<!-- <link rel="stylesheet" href="style.css"> -->
+	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="dist/css/st.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+ 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <link
   rel="stylesheet"
   href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
 />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
-	 
+	 <header>
+		<nav class="nav">
+			<a href="" class="logo">DOPPELGANGER</a>
+  
+			<ul class="nav_ul">
+				<li class="listitem navlinks"><a href="" class="stickanim">Home</a>
+					<ul class="listitemdrop">
+						<li><a href="">Tarih</a></li>
+						<li><a href="">Felsefe</a></li>
+						<li><a href="">Bilim</a></li>
+					</ul>
+				</li>
+				<li class="listitem navlinks"><a href=""  class="stickanim">Contact</a></li>
+				<li class="listitem navlinks"><a href="" class="stickanim">Kategori</a></li>
+			</ul>
+			<div id="hamburger" onclick="this.classList.toggle('open');">
+				<svg width="100" height="100" viewBox="0 0 100 100">
+					<path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+					<path class="line line2" d="M 20,50 H 80" />
+					<path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+				</svg>
+			</div>
+		</nav>
+	 </header>
 	  
-	<nav class="nav">
-		<ul class="nav__list">
-		  <li class="nav__listlogo">
-			<svg viewBox="0 0 640 512" width="100" title="infinity">
-			  <path d="M471.1 96C405 96 353.3 137.3 320 174.6 286.7 137.3 235 96 168.9 96 75.8 96 0 167.8 0 256s75.8 160 168.9 160c66.1 0 117.8-41.3 151.1-78.6 33.3 37.3 85 78.6 151.1 78.6 93.1 0 168.9-71.8 168.9-160S564.2 96 471.1 96zM168.9 320c-40.2 0-72.9-28.7-72.9-64s32.7-64 72.9-64c38.2 0 73.4 36.1 94 64-20.4 27.6-55.9 64-94 64zm302.2 0c-38.2 0-73.4-36.1-94-64 20.4-27.6 55.9-64 94-64 40.2 0 72.9 28.7 72.9 64s-32.7 64-72.9 64z" />
-			</svg>
-		  </li>
-		  <li class="nav__listitem">About
-			<ul class="nav__listitemdrop">
-			  <li>Our Team</li>
-			  <li>Our Process</li>
-			  <li>History</li>
-			</ul>
-		  </li>
-		  <li class="nav__listitem">Work
-			<ul class="nav__listitemdrop">
-			  <li>Portfolio</li>
-			  <li>Showcase</li>
-			</ul>
-		  </li>
-		  <li class="nav__listitem">Contact</li>
-		</ul>
-	  </nav>
+	 
 	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	 <script src="script.js"></script>
 </body>
