@@ -1,65 +1,24 @@
-let menu = document.querySelector('#menu-bars');
-let navbar = document.querySelector('.navbar');
-
-menu.onclick = () =>{
-  menu.classList.toggle('fa-times');
-  navbar.classList.toggle('active');
+const menuBtn = document.querySelector(".menu-icon span");
+const searchBtn = document.querySelector(".search-icon");
+const cancelBtn = document.querySelector(".cancel-icon");
+const items = document.querySelector(".nav-items");
+const form = document.querySelector("form");
+menuBtn.onclick = ()=>{
+  items.classList.add("active");
+  menuBtn.classList.add("hide");
+  searchBtn.classList.add("hide");
+  cancelBtn.classList.add("show");
 }
-window.onscroll = () => {
-    menu.classList.remove('fa-times');
-    navbar.classList.remove('active');
+cancelBtn.onclick = ()=>{
+  items.classList.remove("active");
+  menuBtn.classList.remove("hide");
+  searchBtn.classList.remove("hide");
+  cancelBtn.classList.remove("show");
+  form.classList.remove("active");
+  cancelBtn.style.color = "#ff3d00";
 }
-document.querySelector('#search-icon').onclick = () =>{
-    document.querySelector('#search-form').classList.toggle('active');
-  }
-  
-  document.querySelector('#close').onclick = () =>{
-    document.querySelector('#search-form').classList.remove('active');
-  }
-
-  var swiper = new Swiper(".home-slider", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay:{
-          delay:2500,
-          disableOnInteraction:false,
-      },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    loop:true,
-  });
-
-  var swiper = new Swiper(".review-slider", {
-    spaceBetween: 20,
-    centeredSlides: true,
-    autoplay:{
-        delay:2500,
-        disableOnInteraction:false,
-    },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-   
-  loop:true,
-  breakpoints:{
-    0:{
-      slidesPerView:1,
-    },
-    640:{
-      slidesPerView:2,
-    },
-    768:{
-      slidesPerView:2,
-    },
-    1024:{
-      slidesPerView:3,
-    },
-  },
-});
+searchBtn.onclick = ()=>{
+  form.classList.add("active");
+  searchBtn.classList.add("hide");
+  cancelBtn.classList.add("show");
+}
