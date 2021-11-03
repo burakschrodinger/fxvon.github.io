@@ -1,24 +1,19 @@
-const menuBtn = document.querySelector(".menu-icon span");
-const searchBtn = document.querySelector(".search-icon");
-const cancelBtn = document.querySelector(".cancel-icon");
-const items = document.querySelector(".nav-items");
-const form = document.querySelector("form");
+ 
+const body = document.querySelector("body");
+const navbar = document.querySelector("#navbar");
+const menuBtn = document.querySelector(".menu-btn");
+const cancelBtn = document.querySelector(".cancel-btn");
 menuBtn.onclick = ()=>{
-  items.classList.add("active");
+  navbar.classList.add("show");
   menuBtn.classList.add("hide");
-  searchBtn.classList.add("hide");
-  cancelBtn.classList.add("show");
+  body.classList.add("disabled");
 }
 cancelBtn.onclick = ()=>{
-  items.classList.remove("active");
+  body.classList.remove("disabled");
+  navbar.classList.remove("show");
   menuBtn.classList.remove("hide");
-  searchBtn.classList.remove("hide");
-  cancelBtn.classList.remove("show");
-  form.classList.remove("active");
-  cancelBtn.style.color = "#ff3d00";
 }
-searchBtn.onclick = ()=>{
-  form.classList.add("active");
-  searchBtn.classList.add("hide");
-  cancelBtn.classList.add("show");
+window.onscroll = ()=>{
+  this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
 }
+ 
