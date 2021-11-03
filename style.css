@@ -367,9 +367,18 @@ a{
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-
+footer{
+  width: 100%;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 40px;
+}
 
 
 
