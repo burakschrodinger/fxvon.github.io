@@ -18,20 +18,25 @@
 ::selection{
   background: rgb(0,123,255,0.3);
 }
-#content{
-  width: 80%;
-  margin: auto;
-  padding: 0 30px;
+a{
+  text-decoration: none;
 }
+
 #navbar{
   background-color:  #000000;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 32;
   padding: 25px 0;
   transition: all 0.3s ease;
   
+}
+#content{
+  width: 80%;
+  
+  margin: auto;
+  padding: 0 30px;
 }
 #navbar.sticky{
   background:  #000000;
@@ -149,12 +154,21 @@
     margin-left: 0px;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 413px) {
   #navbar .logo a{
-    font-size: 27px;
+    font-size: 23px;
   }
 }
-
+@media (max-width: 380px) {
+  #navbar .logo a{
+    font-size: 21px;
+  }
+}
+@media (max-width: 312px) {
+  #navbar .logo a{
+    font-size: 16px;
+  }
+}
 #header{
   width: 85%;
   margin: auto;
@@ -163,13 +177,26 @@
   grid-template-columns: repeat(2,1fr);
    
 }
-
+.side h4{
+  margin-left: 50px;
+}
+.side hr{
+  width: 89%;margin-left: 50px;
+}
 .sidepost{
-  margin-left: 60px;
+  margin-left: 50px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 11px;
+}
+.sidepost a{
+  text-decoration: none;
+  color: #000000;
+   
+}
+.sidepost a:hover{
+  color: #000000;text-decoration: underline;
 }
 .sidepost-item{
   display: flex;
@@ -181,7 +208,7 @@
   margin-top: 10px;
 }
 .resim{
-  height: 120px;
+  height: 119px;
   width: 150px;
   object-fit: contain;
 }
@@ -193,6 +220,97 @@
   }
   .sidepost{
     margin-left: 0;
-    margin-top: 50px;
+    margin-top: 20px;
+  }
+  .side h4{
+    margin: 0;
+    margin-top: 30px;
+  }
+  .side hr{
+     margin: 0;
+     margin-top: 20px;
   }
 }
+.mainsec{
+  width: 80%;
+  margin: 90px auto 0 auto;
+}
+.mainsec h3{
+  margin-bottom: 25px;
+}
+.main{
+  
+  display: grid;
+  grid-template-columns: 70% 30%;
+   
+  gap:50px;
+  
+}
+.main-pic{
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+}
+.mainpost{
+  display: flex;
+  margin-bottom: 20px;
+}
+.main .posts{
+  display: flex;
+  flex-direction: column;
+}
+.mainpost-content{
+  margin-left: 30px;
+}
+.main-side{
+  display: flex;
+  gap: 20px;
+}
+
+.main-side-img{
+  width: 140px;
+  height: 110px;
+  object-fit: cover;
+}
+
+@media (max-width:917px){
+  .main{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:589px){
+  .mainpost{
+    flex-direction: column;
+  }
+  .mainpost-content{
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
